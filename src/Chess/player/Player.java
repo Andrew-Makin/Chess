@@ -15,16 +15,17 @@ public abstract class Player {
 
     protected final Board board;
     protected final King playersKing;
-    protected Collection<Move> playersMoves;
-    protected Collection<Move> opponentsMoves;
+    protected final Collection<Move> playersMoves;
+    protected final Collection<Move> opponentsMoves;
     protected final boolean isInCheck;
     public Player(Board board, Collection<Move> playersMoves, Collection<Move> opponentsMoves) {
+
         this.board = board;
         this.playersKing = findKing();
-        playersMoves.addAll(calculateCastles());
         this.playersMoves = playersMoves;
         this.opponentsMoves = opponentsMoves;
         this.isInCheck = checkSquareAttacked(playersKing.getLocation(), opponentsMoves);
+        playersMoves.addAll(calculateCastles());
     }
 
     public King getKing() {

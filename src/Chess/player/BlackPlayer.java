@@ -28,6 +28,7 @@ public class BlackPlayer extends Player{
     @Override
     public Collection<Move> calculateCastles() {
         Collection<Move> ans = new ArrayList<>();
+
         if (playersKing.isFirstMove() && board.getSquare(7).squareOccupied()) {
             if (board.getSquare(7).getPiece().isFirstMove() && board.getSquare(7).getPiece().getType().equals("rook")) {
                 if (       !Player.checkSquareAttacked(4, super.opponentsMoves)

@@ -39,6 +39,7 @@ public class Board {
         for (Piece piece : pieces) {
             moves.addAll(piece.getLegalMoves(this));
         }
+
         return moves;
     }
 
