@@ -11,8 +11,8 @@ import Chess.board.Square;
 public abstract class Piece {
 
     protected final int location;
-    protected static int YCoord;
-    protected static int XCoord;
+    protected final int YCoord;
+    protected final int XCoord;
     protected final Team color;
     protected final boolean firstMove;
     protected final boolean justJumped;

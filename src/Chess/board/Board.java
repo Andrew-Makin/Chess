@@ -67,6 +67,7 @@ public class Board {
     public static Board createStandardBoard() {
         final Builder builder = new Builder();
         //Black
+
         builder.setPiece(new Rook  (0, Team.Black, true));
         builder.setPiece(new Knight(1, Team.Black, true));
         builder.setPiece(new Bishop(2, Team.Black, true));
@@ -76,11 +77,13 @@ public class Board {
         builder.setPiece(new Knight(6, Team.Black, true));
         builder.setPiece(new Rook  (7, Team.Black, true));
 
+
         for (int i = 0; i < BoardUtils.NUM_SQUARES_PER_ROW; i++) {
             builder.setPiece(new Pawn(i + BoardUtils.NUM_SQUARES_PER_ROW, Team.Black, true, false));
         }
 
         //White
+
         builder.setPiece(new Rook  (56, Team.White, true));
         builder.setPiece(new Knight(57, Team.White, true));
         builder.setPiece(new Bishop(58, Team.White, true));
@@ -90,9 +93,12 @@ public class Board {
         builder.setPiece(new Knight(62, Team.White, true));
         builder.setPiece(new Rook  (63, Team.White, true));
 
+
+
         for (int i = 0; i < BoardUtils.NUM_SQUARES_PER_ROW; i++) {
             builder.setPiece(new Pawn(i + BoardUtils.NUM_SQUARES_PER_ROW * (BoardUtils.NUM_SQUARES_PER_ROW - 2), Team.White, true, false));
         }
+
         builder.setPlayerToMove(Team.White);
         return builder.build();
     }
@@ -112,8 +118,8 @@ public class Board {
     // TODO: string builder could be used here to increase efficiency
     public String toString() {
         String ans = "";
-        int i = 0;
-        for (Square square : gameBoard) {
+        for (int i = 0; i < BoardUtils.NUM_SQUARES; i++) {
+            Square square = gameBoard.get(i);
             if (square.squareOccupied()) {
                 ans = ans + square.getPiece().toString();
             } else {
@@ -123,7 +129,7 @@ public class Board {
             if (i % BoardUtils.NUM_SQUARES_PER_ROW == BoardUtils.NUM_SQUARES_PER_ROW - 1) {
                 ans = ans + "\n";
             }
-            i++;
+
         }
         return ans;
     }

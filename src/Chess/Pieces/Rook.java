@@ -38,7 +38,9 @@ public class Rook extends Piece{
 
     @Override
     public List<Move> getLegalMoves(Board board) {
+
         List<Move> legalMoves = new ArrayList<>();
+
         for (int i = 0; i < potentialMovesX.length; i++) {
             int potentialXCoord = XCoord + potentialMovesX[i];
             int potentialYCoord = YCoord + potentialMovesY[i];
@@ -57,6 +59,7 @@ public class Rook extends Piece{
                 potentialYCoord = potentialYCoord + potentialMovesY[i];
             }
         }
+
         return legalMoves;
     }
 

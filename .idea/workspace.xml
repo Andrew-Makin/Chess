@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="668097ba-5a0e-4cb1-a9ec-24e2604975d8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Chess/MyChess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/MyChess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chess/Pieces/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/Pieces/Pawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chess/Pieces/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/Pieces/Piece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chess/Pieces/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/Pieces/Rook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Chess/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/board/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/board/MoveTransition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/board/MoveTransition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/player/BlackPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/player/BlackPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/player/WhitePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/player/WhitePlayer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +42,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -83,6 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1659391851604</updated>
       <workItem from="1660087230243" duration="3323000" />
+      <workItem from="1660261943519" duration="6149000" />
     </task>
     <servers />
   </component>

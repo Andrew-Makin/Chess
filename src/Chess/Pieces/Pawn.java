@@ -33,9 +33,11 @@ public class Pawn extends Piece{
     @Override
     public List<Move> getLegalMoves(Board board) {
         List<Move> legalMoves = new ArrayList<>();
+
+
         for (int i = 0; i < potentialMovesX.length; i++) {
-            int potentialXCoord = super.XCoord + potentialMovesX[i] * this.color.getDirection() * this.color.getDirection();
-            int potentialYCoord = super.YCoord + potentialMovesY[i] * this.color.getDirection() * this.color.getDirection();
+            int potentialXCoord = super.XCoord + potentialMovesX[i] * this.color.getDirection();
+            int potentialYCoord = super.YCoord + potentialMovesY[i] * this.color.getDirection();
             if (validCoordinates(potentialXCoord, potentialYCoord)) {
                 int potentialDest = potentialYCoord * 8 + potentialXCoord;
                 Square potentialSquare = board.getSquare(potentialDest);
@@ -61,6 +63,8 @@ public class Pawn extends Piece{
                 }
             }
         }
+
+
         return legalMoves;
     }
 

@@ -10,15 +10,24 @@ import java.util.Random;
 public class MyChess {
 
     public static void main(String[] args) {
+        int j = 0;
         Board board = Board.createStandardBoard();
-        Collection<Move> moves = board.getCurrentPlayer().getLegalMoves();
-        Move move;
+        while (j < 20) {
+            Collection<Move> moves = board.getCurrentPlayer().getLegalMoves();
+            Move move;
 
-        Random r = new Random();
+            Random r = new Random();
 
-        move = moves.stream().toList().get(0);
-        MoveTransition mt = board.getCurrentPlayer().makeMove(move);
-        board = mt.getTransitionBoard();
-        System.out.println(board);
+            int i;
+
+            i = r.nextInt(moves.stream().toList().size());
+            move = moves.stream().toList().get(i);
+
+            MoveTransition mt = board.getCurrentPlayer().makeMove(move);
+
+            board = mt.getTransitionBoard();
+            System.out.println(board);
+            j++;
+        }
     }
 }
