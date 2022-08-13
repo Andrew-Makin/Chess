@@ -1,0 +1,99 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"668097ba-5a0e-4cb1-a9ec-24e2604975d8\" name=\"Changes\" comment=\"\">\n      <change afterPath=\"$PROJECT_DIR$/.gitignore\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/.idea/modules.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/.idea/uiDesigner.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/.idea/vcs.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/MyChessGame.iml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Chess/MyChess.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Chess/Pieces/Bishop.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Chess/Pieces/King.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Chess/Pieces/Knight.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Chess/Pieces/Pawn.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Chess/Pieces/Piece.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Chess/Pieces/Queen.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Chess/Pieces/Rook.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Chess/Team.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Chess/board/Board.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Chess/board/BoardUtils.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Chess/board/EmptySquare.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Chess/board/Move.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Chess/board/MoveStatus.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Chess/board/MoveTransition.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Chess/board/OccupiedSquare.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Chess/board/Square.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Chess/player/BlackPlayer.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Chess/player/Player.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Chess/player/WhitePlayer.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"package-info\" />\n        <option value=\"Class\" />\n        <option value=\"Enum\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2ClzEjH3qSR3QGUwGBml1m3guyc\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\n    \"project.structure.last.edited\": \"Modules\",\n    \"project.structure.proportion\": \"0.0\",\n    \"project.structure.side.proportion\": \"0.0\",\n    \"settings.editor.selected.configurable\": \"preferences.keymap\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"CreateClassDialog.RecentsKey\">\n      <recent name=\"Chess.board\" />\n      <recent name=\"\" />\n    </key>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"668097ba-5a0e-4cb1-a9ec-24e2604975d8\" name=\"Changes\" comment=\"\" />\n      <created>1659391851604</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1659391851604</updated>\n    </task>\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 743e1955dc6aaa1f62021eae7bf196fb7eb95e29)
++++ b/.idea/workspace.xml	(date 1660087337310)
+@@ -4,34 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="668097ba-5a0e-4cb1-a9ec-24e2604975d8" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/MyChessGame.iml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Chess/MyChess.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Chess/Pieces/Bishop.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Chess/Pieces/King.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Chess/Pieces/Knight.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Chess/Pieces/Pawn.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Chess/Pieces/Piece.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Chess/Pieces/Queen.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Chess/Pieces/Rook.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Chess/Team.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Chess/board/Board.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Chess/board/BoardUtils.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Chess/board/EmptySquare.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Chess/board/Move.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Chess/board/MoveStatus.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Chess/board/MoveTransition.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Chess/board/OccupiedSquare.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Chess/board/Square.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Chess/player/BlackPlayer.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Chess/player/Player.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Chess/player/WhitePlayer.java" afterDir="false" />
++    <list default="true" id="668097ba-5a0e-4cb1-a9ec-24e2604975d8" name="Changes" comment="dd">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -76,6 +50,26 @@
+       <recent name="" />
+     </key>
+   </component>
++  <component name="RunManager">
++    <configuration name="MyChess" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="Chess.MyChess" />
++      <module name="MyChessGame" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="Chess.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="Application.MyChess" />
++      </list>
++    </recent_temporary>
++  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -85,6 +79,14 @@
+       <option name="presentableId" value="Default" />
+       <updated>1659391851604</updated>
+     </task>
++    <task id="LOCAL-00001" summary="dd">
++      <created>1660086875780</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1660086875780</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -98,4 +100,8 @@
+       </map>
+     </option>
+   </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="dd" />
++    <option name="LAST_COMMIT_MESSAGE" value="dd" />
++  </component>
+ </project>
+\ No newline at end of file
