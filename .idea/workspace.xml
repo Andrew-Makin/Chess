@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="668097ba-5a0e-4cb1-a9ec-24e2604975d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+    <list default="true" id="668097ba-5a0e-4cb1-a9ec-24e2604975d8" name="Changes" comment="dd">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testJFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/MyChess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/MyChess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/Pieces/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/Pieces/Pawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/Pieces/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/Pieces/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/Pieces/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/Pieces/Rook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/board/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyChessGame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyChessGame.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +22,7 @@
         <option value="package-info" />
         <option value="Class" />
         <option value="Enum" />
+        <option value="JavaFXApplication" />
       </list>
     </option>
   </component>
@@ -39,24 +38,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/home/andrew/JavaFX/openjfx-18.0.2_linux-x64_bin-sdk/javafx-sdk-18.0.2/lib",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.keymap"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Chess.board" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="MyChess" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.testJFX">
+    <configuration name="MyChess" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Chess.MyChess" />
       <module name="MyChessGame" />
       <extension name="coverage">
@@ -69,11 +70,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.MyChess" />
-      </list>
-    </recent_temporary>
+    <configuration name="testJFX" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="testJFX" />
+      <module name="MyChessGame" />
+      <option name="VM_PARAMETERS" value="--module-path $USER_HOME$/JavaFX/openjfx-18.0.2_linux-x64_bin-sdk/javafx-sdk-18.0.2/lib --add-modules=javafx.base,javafx.controls,javafx.graphics,javafx.media" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.MyChess" />
+      <item itemvalue="Application.testJFX" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -83,13 +91,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659391851604</updated>
-      <workItem from="1660087230243" duration="3323000" />
-      <workItem from="1660261943519" duration="6149000" />
     </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -101,6 +104,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
