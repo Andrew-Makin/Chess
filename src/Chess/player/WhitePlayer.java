@@ -3,6 +3,7 @@ package Chess.player;
 import Chess.Pieces.Piece;
 import Chess.Team;
 import Chess.board.Board;
+import Chess.board.BoardUtils;
 import Chess.board.Move;
 
 import java.util.ArrayList;
@@ -29,6 +30,10 @@ public class WhitePlayer extends Player{
     public Collection<Move> calculateCastles() {
         Collection<Move> ans = new ArrayList<>();
 
+        if (BoardUtils.NUM_SQUARES_PER_ROW < 8) {
+            return ans;
+        }
+
         if (playersKing.isFirstMove() && board.getSquare(63).squareOccupied()) {
             if (board.getSquare(63).getPiece().isFirstMove() && board.getSquare(63).getPiece().getType().equals("rook")) {
                 if (       !Player.checkSquareAttacked(60, super.opponentsMoves)
@@ -45,7 +50,7 @@ public class WhitePlayer extends Player{
                 if (       !Player.checkSquareAttacked(60, super.opponentsMoves)
                         && !Player.checkSquareAttacked(59, super.opponentsMoves)
                         && !Player.checkSquareAttacked(58, super.opponentsMoves)) {
-                    if (!board.getSquare(59).squareOccupied() && !board.getSquare(58).squareOccupied()) {
+                    if (!board.getSquare(59).squareOccupied() && !board.getSquare(58).squareOccupied() && !board.getSquare(57).squareOccupied()) {
                         ans.add(new Move.Castle(board, playersKing, 58, true));
                     }
                 }

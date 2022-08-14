@@ -9,6 +9,7 @@ import Chess.board.Square;
 import java.util.ArrayList;
 import java.util.List;
 
+import static Chess.board.BoardUtils.NUM_SQUARES_PER_ROW;
 import static Chess.board.BoardUtils.validCoordinates;
 import static Chess.board.Move.*;
 
@@ -35,7 +36,7 @@ public class Knight extends Piece{
             int potentialXCoord = super.XCoord + potentialMovesX[i];
             int potentialYCoord = super.YCoord + potentialMovesY[i];
             if (validCoordinates(potentialXCoord, potentialYCoord)) {
-                int potentialDest = potentialYCoord * 8 + potentialXCoord;
+                int potentialDest = potentialYCoord * NUM_SQUARES_PER_ROW + potentialXCoord;
                 Square potentialSquare = board.getSquare(potentialDest);
                 if (!potentialSquare.squareOccupied()) {//tile is unoccupied)
                     legalMoves.add(new StandardMove(board, this, potentialDest));

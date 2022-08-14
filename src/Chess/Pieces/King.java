@@ -34,7 +34,7 @@ public class King extends Piece{
             int potentialXCoord = super.XCoord + potentialMovesX[i];
             int potentialYCoord = super.YCoord + potentialMovesY[i];
             if (validCoordinates(potentialXCoord, potentialYCoord)) {
-                int potentialDest = potentialYCoord * 8 + potentialXCoord;
+                int potentialDest = potentialYCoord * BoardUtils.NUM_SQUARES_PER_ROW + potentialXCoord;
                 // I don't know why this didn't work for the potential dest calculation:
                 // super.location + potentialMovesX[i] + BoardUtils.NUM_SQUARES_PER_ROW * potentialMovesY[i];
                 // maybe something to do with the edges of the board and wrapping around

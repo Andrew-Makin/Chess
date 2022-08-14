@@ -2,6 +2,7 @@ package Chess.Pieces;
 
 import Chess.Team;
 import Chess.board.Board;
+import Chess.board.BoardUtils;
 import Chess.board.Move;
 import Chess.board.Square;
 
@@ -23,7 +24,7 @@ public class Pawn extends Piece{
 
     @Override
     public Piece movePiece(Move move) {
-        if (move.getDestination()/8 == 0 || move.getDestination()/8 == 7) {
+        if (move.getDestination()/ NUM_SQUARES_PER_ROW == 0 || move.getDestination()/NUM_SQUARES_PER_ROW == (NUM_SQUARES_PER_ROW - 1)) {
             // TODO: return promoted piece
             return new Queen(move.getDestination(), this.getColor(), false);
         }
@@ -39,7 +40,7 @@ public class Pawn extends Piece{
             int potentialXCoord = super.XCoord + potentialMovesX[i] * this.color.getDirection();
             int potentialYCoord = super.YCoord + potentialMovesY[i] * this.color.getDirection();
             if (validCoordinates(potentialXCoord, potentialYCoord)) {
-                int potentialDest = potentialYCoord * 8 + potentialXCoord;
+                int potentialDest = potentialYCoord * NUM_SQUARES_PER_ROW + potentialXCoord;
                 Square potentialSquare = board.getSquare(potentialDest);
                 int enPassantVictimLocation = potentialDest + NUM_SQUARES_PER_ROW * this.color.getDirection();
                 if (i==0 && !potentialSquare.squareOccupied()) { // standard move

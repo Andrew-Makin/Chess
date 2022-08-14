@@ -68,14 +68,21 @@ public class Board {
         final Builder builder = new Builder();
         //Black
 
-        builder.setPiece(new Rook  (0, Team.Black, true));
-        builder.setPiece(new Knight(1, Team.Black, true));
-        builder.setPiece(new Bishop(2, Team.Black, true));
-        builder.setPiece(new Queen (3, Team.Black, true));
-        builder.setPiece(new King  (4, Team.Black, true));
-        builder.setPiece(new Bishop(5, Team.Black, true));
-        builder.setPiece(new Knight(6, Team.Black, true));
-        builder.setPiece(new Rook  (7, Team.Black, true));
+        int blackRt = BoardUtils.NUM_SQUARES_PER_ROW / 2;
+        if (BoardUtils.NUM_SQUARES_PER_ROW >= 8)
+            builder.setPiece(new Rook  (blackRt - 4, Team.Black, true));
+        if (BoardUtils.NUM_SQUARES_PER_ROW >= 6)
+            builder.setPiece(new Knight(blackRt - 3, Team.Black, true));
+        if (BoardUtils.NUM_SQUARES_PER_ROW >= 4)
+            builder.setPiece(new Bishop(blackRt - 2, Team.Black, true));
+        builder.setPiece(new Queen (blackRt - 1, Team.Black, true));
+        builder.setPiece(new King  (blackRt + 0, Team.Black, true));
+        if (BoardUtils.NUM_SQUARES_PER_ROW >= 3)
+            builder.setPiece(new Bishop(blackRt + 1, Team.Black, true));
+        if (BoardUtils.NUM_SQUARES_PER_ROW >= 5)
+            builder.setPiece(new Knight(blackRt + 2, Team.Black, true));
+        if (BoardUtils.NUM_SQUARES_PER_ROW >= 7)
+            builder.setPiece(new Rook  (blackRt + 3, Team.Black, true));
 
 
         for (int i = 0; i < BoardUtils.NUM_SQUARES_PER_ROW; i++) {
@@ -84,14 +91,21 @@ public class Board {
 
         //White
 
-        builder.setPiece(new Rook  (56, Team.White, true));
-        builder.setPiece(new Knight(57, Team.White, true));
-        builder.setPiece(new Bishop(58, Team.White, true));
-        builder.setPiece(new Queen (59, Team.White, true));
-        builder.setPiece(new King  (60, Team.White, true));
-        builder.setPiece(new Bishop(61, Team.White, true));
-        builder.setPiece(new Knight(62, Team.White, true));
-        builder.setPiece(new Rook  (63, Team.White, true));
+        int whiteRt = BoardUtils.NUM_SQUARES - ((BoardUtils.NUM_SQUARES_PER_ROW + 1) / 2);
+        if (BoardUtils.NUM_SQUARES_PER_ROW >= 6)
+            builder.setPiece(new Rook  (whiteRt - 4, Team.White, true));
+        if (BoardUtils.NUM_SQUARES_PER_ROW >= 6)
+            builder.setPiece(new Knight(whiteRt - 3, Team.White, true));
+        if (BoardUtils.NUM_SQUARES_PER_ROW >= 4)
+            builder.setPiece(new Bishop(whiteRt - 2, Team.White, true));
+        builder.setPiece(new Queen (whiteRt - 1, Team.White, true));
+        builder.setPiece(new King  (whiteRt + 0, Team.White, true));
+        if (BoardUtils.NUM_SQUARES_PER_ROW >= 3)
+            builder.setPiece(new Bishop(whiteRt + 1, Team.White, true));
+        if (BoardUtils.NUM_SQUARES_PER_ROW >= 5)
+            builder.setPiece(new Knight(whiteRt + 2, Team.White, true));
+        if (BoardUtils.NUM_SQUARES_PER_ROW >= 7)
+            builder.setPiece(new Rook  (whiteRt + 3, Team.White, true));
 
 
 

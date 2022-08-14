@@ -5,36 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="668097ba-5a0e-4cb1-a9ec-24e2604975d8" name="Changes" comment="got a working version of JavaFX">
-      <change beforePath="$PROJECT_DIR$/lib/javafx-swt.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javafx.base.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javafx.controls.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javafx.fxml.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javafx.graphics.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javafx.media.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javafx.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javafx.swing.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javafx.web.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/libavplugin-54.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/libavplugin-56.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/libavplugin-57.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/libavplugin-ffmpeg-56.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/libavplugin-ffmpeg-57.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/libavplugin-ffmpeg-58.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/libdecora_sse.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/libfxplugins.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/libglass.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/libglassgtk2.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/libglassgtk3.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/libgstreamer-lite.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/libjavafx_font.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/libjavafx_font_freetype.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/libjavafx_font_pango.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/libjavafx_iio.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/libjfxmedia.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/libjfxwebkit.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/libprism_common.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/libprism_es2.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/libprism_sw.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chess/MyChess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/MyChess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chess/Pieces/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/Pieces/Bishop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chess/Pieces/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/Pieces/King.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chess/Pieces/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/Pieces/Knight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chess/Pieces/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/Pieces/Pawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chess/Pieces/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/Pieces/Queen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chess/Pieces/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/Pieces/Rook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chess/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/board/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chess/board/BoardUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/board/BoardUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chess/player/BlackPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/player/BlackPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chess/player/WhitePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/player/WhitePlayer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,18 +45,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/andrew/IdeaProjects/MyChessGame",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/andrew/IdeaProjects/MyChessGame&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Chess.board" />
@@ -84,7 +66,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.testJFX">
+  <component name="RunManager" selected="Application.MyChess">
     <configuration name="MyChess" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Chess.MyChess" />
       <module name="MyChessGame" />
@@ -134,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660352047447</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="got a working version of JavaFX">
+      <created>1660352330669</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660352330669</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

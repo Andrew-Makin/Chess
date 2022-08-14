@@ -9,6 +9,7 @@ import Chess.board.Square;
 import java.util.ArrayList;
 import java.util.List;
 
+import static Chess.board.BoardUtils.NUM_SQUARES_PER_ROW;
 import static Chess.board.BoardUtils.validCoordinates;
 
 public class Rook extends Piece{
@@ -45,7 +46,7 @@ public class Rook extends Piece{
             int potentialXCoord = XCoord + potentialMovesX[i];
             int potentialYCoord = YCoord + potentialMovesY[i];
             while (validCoordinates(potentialXCoord, potentialYCoord)) {
-                int potentialDest = potentialYCoord * 8 + potentialXCoord;
+                int potentialDest = potentialYCoord * NUM_SQUARES_PER_ROW + potentialXCoord;
                 Square potentialSquare = board.getSquare(potentialDest);
                 if (!potentialSquare.squareOccupied()) {//tile is unoccupied)
                     legalMoves.add(new Move.StandardMove(board, this, potentialDest));
