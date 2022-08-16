@@ -36,4 +36,8 @@ public abstract class Square {
     public abstract boolean squareOccupied();
 
     public abstract Piece getPiece();
+
+    public int getSquareID() {
+        return this.squareID;
+    }
 }
