@@ -15,6 +15,8 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
+// table contains the entire GUI not much logic of its own though
+
 public class Table {
 
     private final Color lightTileColor = Color.decode("#FFFACD");
@@ -116,13 +118,8 @@ public class Table {
 
     private JMenu createFileMenu() {
         final JMenu fileMenu = new JMenu("File");
-        final JMenuItem openPGN = new JMenuItem("Load PGN File");
-        openPGN.addActionListener(new ActionListener() {
-
-           public void actionPerformed(ActionEvent e) {
-               System.out.println("open the pgn file");
-           }
-        });
+        final JMenuItem openPGN = new JMenuItem("New Game");
+        openPGN.addActionListener(new NewGameActionListener(this));
         fileMenu.add(openPGN);
 
         final JMenuItem exitMenuItem = new JMenuItem("Exit");
@@ -136,6 +133,12 @@ public class Table {
         fileMenu.add(exitMenuItem);
         return fileMenu;
     }
+
+    public void setDrawnBoard(Board board) {
+        this.drawnBoard = board;
+        boardPanel.drawBoard(drawnBoard);
+    }
+
 
     private class BoardPanel extends JPanel {
         final java.util.List<SquarePanel> boardSquares;

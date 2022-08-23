@@ -5,23 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="668097ba-5a0e-4cb1-a9ec-24e2604975d8" name="Changes" comment="adding final comments">
+      <change afterPath="$PROJECT_DIR$/src/Chess/GUI/NewGameActionListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Chess/GUI/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/GUI/Table.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/GUI/testJFX.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/MyChess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/MyChess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/Pieces/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/Pieces/Bishop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/Pieces/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/Pieces/King.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/Pieces/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/Pieces/Knight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/Pieces/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/Pieces/Pawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/Pieces/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/Pieces/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/Pieces/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/Pieces/Queen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/Pieces/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/Pieces/Rook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/board/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/board/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/board/Move.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/board/MoveTransition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/board/PreMove.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/board/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/board/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/player/BlackPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/player/BlackPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/player/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661297486519</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="adding final comments">
+      <created>1661297494018</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1661297494018</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
