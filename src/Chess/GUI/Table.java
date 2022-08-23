@@ -14,6 +14,9 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 
 public class Table {
 
@@ -24,6 +27,7 @@ public class Table {
     private final JFrame gameFrame;
     private final BoardPanel boardPanel;
     private Board drawnBoard;
+    private Orientation orientation;
 
     private final static Dimension OUTER_FRAME_DIMENSION = new Dimension(800, 800);
     private final static Dimension BOARD_PANEL_DIMENSION = new Dimension(300,300);
@@ -31,8 +35,10 @@ public class Table {
     private Square sourceSquare;
     private Piece candidatePiece;
     private Square destSquare;
+    private boolean legalHighlight;
 
     public Table() {
+        this.legalHighlight = true;
         this.gameFrame = new JFrame("JChess");
         this.gameFrame.setLayout(new BorderLayout());
         final JMenuBar tableMenuBar = createMenuBar();
@@ -40,6 +46,7 @@ public class Table {
         this.gameFrame.setSize(OUTER_FRAME_DIMENSION);
         this.drawnBoard = Board.createStandardBoard();
         this.boardPanel = new BoardPanel();
+        this.orientation = Orientation.Normal;
         this.gameFrame.add(this.boardPanel, BorderLayout.CENTER);
         this.gameFrame.setVisible(true);
     }
@@ -47,7 +54,31 @@ public class Table {
     private JMenuBar createMenuBar() {
         JMenuBar tableMenuBar = new JMenuBar();
         tableMenuBar.add(createFileMenu());
+        tableMenuBar.add(createPreferencesMenu());
         return tableMenuBar;
+    }
+
+    private JMenu createPreferencesMenu() {
+        final JMenu prefMenu = new JMenu("Preferences");
+        final JMenuItem flipBoard = new JMenuItem("Flip Board");
+        flipBoard.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                orientation = orientation.opposite();
+                boardPanel.drawBoard(drawnBoard);
+            }
+        });
+        final JMenuItem showMoves = new JMenuItem("Toggle Highlight");
+        showMoves.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                legalHighlight = !legalHighlight;
+            }
+        });
+        prefMenu.add(showMoves);
+        prefMenu.addSeparator();
+        prefMenu.add(flipBoard);
+        return prefMenu;
     }
 
     private JMenu createFileMenu() {
@@ -68,6 +99,7 @@ public class Table {
                 System.exit(0);
             }
         });
+        fileMenu.addSeparator();
         fileMenu.add(exitMenuItem);
         return fileMenu;
     }
@@ -89,7 +121,7 @@ public class Table {
 
         public void drawBoard(final Board board) {
             removeAll();
-            for(final SquarePanel squarePanel : boardSquares) {
+            for(final SquarePanel squarePanel : orientation.traverse(boardSquares)) {
                 squarePanel.drawSquare(board);
                 add(squarePanel);
             }
@@ -175,12 +207,36 @@ public class Table {
             validate();
         }
 
+        private void showLegals(final Board board) {
+            if (legalHighlight) {
+                for(Move move : pieceLegals(board)) {
+                    if(move.getDestination() == this.squareID) {
+                        try{
+                            if(move.isCapture()) {
+                                add(new JLabel(new ImageIcon(ImageIO.read(new File("art/other/capture_dot.png")))));
+                            } else {
+                                add(new JLabel(new ImageIcon(ImageIO.read(new File("art/other/regular_dot.png")))));
+                            }
+                        } catch(Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            }
+        }
+
+        private Collection<Move> pieceLegals(Board board) {
+            if(candidatePiece!=null && candidatePiece.getColor() == board.getCurrentPlayer().getColor()) {
+                return candidatePiece.getLegalMoves(board);
+            }
+            return Collections.emptyList();
+        }
+
         private void assignSquarePiece(Board board) {
             this.removeAll();
             if(board.getSquare(this.squareID).squareOccupied()) {
-                try {                       //bishopWhite.gif
-                    System.out.println(pieceIconPath + board.getSquare(this.squareID).getPiece().getType() + board.getSquare(this.squareID).getPiece().getColor().toString() + ".gif");
-                    final BufferedImage image = ImageIO.read(new File(pieceIconPath + board.getSquare(this.squareID).getPiece().getType() + board.getSquare(this.squareID).getPiece().getColor().toString() + ".gif"));
+                try {                       //ex file name: bishopWhite.gif
+                    final BufferedImage image = ImageIO.read(new File(pieceIconPath + board.getSquare(this.squareID).getPiece().getType() + board.getSquare(this.squareID).getPiece().getColor().toString() + ".png"));
                     add(new JLabel(new ImageIcon(image)));
                 } catch (IOException e) {
                     System.out.println(this.squareID);
@@ -192,6 +248,7 @@ public class Table {
         public void drawSquare(Board board) {
             assignSquareColor();
             assignSquarePiece(board);
+            showLegals(board);
             validate();
             repaint();
         }
@@ -203,5 +260,42 @@ public class Table {
                 setBackground(darkTileColor);
             }
         }
+    }
+
+    public enum Orientation {
+
+        Normal {
+            @Override
+            List<SquarePanel> traverse(List<SquarePanel> boardSquares) {
+                return boardSquares;
+            }
+
+            @Override
+            Orientation opposite() {
+                return Flipped;
+            }
+        },
+
+        Flipped {
+            @Override
+            List<SquarePanel> traverse(List<SquarePanel> boardSquares) {
+                List<SquarePanel> reversedList = new ArrayList<>();
+                for(SquarePanel square : boardSquares) {
+                    reversedList.add(square);
+                }
+                Collections.reverse(reversedList);
+                return reversedList;
+            }
+
+            @Override
+            Orientation opposite() {
+                return Normal;
+            }
+        };
+
+
+        abstract java.util.List<SquarePanel> traverse(final java.util.List<SquarePanel> boardSquares);
+        abstract Orientation opposite();
+
     }
 }

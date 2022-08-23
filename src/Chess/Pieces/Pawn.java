@@ -42,7 +42,7 @@ public class Pawn extends Piece{
             if (validCoordinates(potentialXCoord, potentialYCoord)) {
                 int potentialDest = potentialYCoord * NUM_SQUARES_PER_ROW + potentialXCoord;
                 Square potentialSquare = board.getSquare(potentialDest);
-                int enPassantVictimLocation = potentialDest + NUM_SQUARES_PER_ROW * this.color.getDirection();
+                int enPassantVictimLocation = potentialDest + NUM_SQUARES_PER_ROW;
                 if (i==0 && !potentialSquare.squareOccupied()) { // standard move
                     legalMoves.add(new StandardMove(board, this, potentialDest));
                 } else if (i==1 && super.isFirstMove()

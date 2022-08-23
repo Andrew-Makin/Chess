@@ -58,6 +58,8 @@ public abstract class Move {
         return false;
     }
 
+    public boolean isCapture() {return false;}
+
     public static final class StandardMove extends Move {
 
         public StandardMove(Board board, Piece movedPiece, int destination) {
@@ -120,6 +122,8 @@ public abstract class Move {
 
             return builder.build();
         }
+
+        public boolean isCapture() {return true;}
     }
 
     public static final class Jump extends Move {

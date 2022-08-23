@@ -4,66 +4,65 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="668097ba-5a0e-4cb1-a9ec-24e2604975d8" name="Changes" comment="Fixed castleing and played around a bit with main">
-      <change afterPath="$PROJECT_DIR$/art.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/fancy/BB.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/fancy/BK.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/fancy/BN.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/fancy/BP.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/fancy/BQ.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/fancy/BR.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/fancy/WB.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/fancy/WK.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/fancy/WN.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/fancy/WP.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/fancy/WQ.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/fancy/WR.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/fancy2/BB.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/fancy2/BK.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/fancy2/BN.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/fancy2/BP.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/fancy2/BQ.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/fancy2/BR.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/fancy2/WB.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/fancy2/WK.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/fancy2/WN.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/fancy2/WP.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/fancy2/WQ.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/fancy2/WR.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/holywarriors/BB.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/holywarriors/BK.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/holywarriors/BN.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/holywarriors/BP.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/holywarriors/BQ.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/holywarriors/BR.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/holywarriors/WB.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/holywarriors/WK.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/holywarriors/WN.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/holywarriors/WP.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/holywarriors/WQ.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/holywarriors/WR.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/misc/green_dot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/misc/illegal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/misc/red_dot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/simple/bishopBlack.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/simple/bishopWhite.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/simple/kingBlack.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/simple/kingWhite.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/simple/knightBlack.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/simple/knightWhite.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/simple/pawnBlack.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/simple/pawnWhite.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/simple/queenBlack.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/simple/queenWhite.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/simple/rookBlack.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art/simple/rookWhite.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Chess/GUI/Table.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Chess/GUI/testJFX.java" afterDir="false" />
+    <list default="true" id="668097ba-5a0e-4cb1-a9ec-24e2604975d8" name="Changes" comment="first GUI">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_12_22,_9_44_AM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_12_22__9_44_AM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/fancy/BB.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/fancy/BK.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/fancy/BN.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/fancy/BP.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/fancy/BQ.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/fancy/BR.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/fancy/WB.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/fancy/WK.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/fancy/WN.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/fancy/WP.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/fancy/WQ.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/fancy/WR.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/fancy2/BB.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/fancy2/BK.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/fancy2/BN.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/fancy2/BP.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/fancy2/BQ.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/fancy2/BR.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/fancy2/WB.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/fancy2/WK.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/fancy2/WN.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/fancy2/WP.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/fancy2/WQ.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/fancy2/WR.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/holywarriors/BB.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/holywarriors/BK.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/holywarriors/BN.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/holywarriors/BP.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/holywarriors/BQ.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/holywarriors/BR.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/holywarriors/WB.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/holywarriors/WK.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/holywarriors/WN.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/holywarriors/WP.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/holywarriors/WQ.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/holywarriors/WR.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/misc/green_dot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/misc/illegal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/misc/red_dot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/simple/bishopBlack.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/simple/bishopWhite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/simple/kingBlack.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/simple/kingWhite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/simple/knightBlack.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/simple/knightWhite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/simple/pawnBlack.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/simple/pawnWhite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/simple/queenBlack.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/simple/queenWhite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/simple/rookBlack.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/simple/rookWhite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chess/GUI/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/GUI/Table.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Chess/MyChess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/MyChess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/board/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/board/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testJFX.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chess/Pieces/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/Pieces/Pawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chess/board/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/board/Move.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,18 +91,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/andrew/IdeaProjects/MyChessGame",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/andrew/IdeaProjects/MyChessGame&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Chess.board" />
@@ -182,7 +181,28 @@
       <option name="project" value="LOCAL" />
       <updated>1660441624580</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fixed castleing and played around a bit with main">
+      <created>1660622963051</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1660622963051</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fixed castleing and played around a bit with main">
+      <created>1660622985304</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1660622985304</updated>
+    </task>
+    <task id="LOCAL-00007" summary="first GUI">
+      <created>1660622996714</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1660622996714</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,7 +218,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="got a working version of JavaFX" />
+    <MESSAGE value="First gui" />
     <MESSAGE value="Fixed castleing and played around a bit with main" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed castleing and played around a bit with main" />
+    <MESSAGE value="first GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="first GUI" />
   </component>
 </project>
