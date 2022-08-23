@@ -6,11 +6,13 @@ import Chess.Team;
 import Chess.board.Board;
 import Chess.board.Move;
 import Chess.board.MoveStatus;
-import Chess.board.MoveTransition;
+import Chess.board.PreMove;
 
-import java.util.ArrayList;
 import java.util.Collection;
 
+// The player class is where castles are calculated, they are the only move not calculated by a piece
+// this is because the castle requires a lot more information about board state than any other
+// move, also it moves two pieces.
 public abstract class Player {
 
     protected final Board board;
@@ -53,56 +55,21 @@ public abstract class Player {
         return false;
     }
 
-    public static Collection<Move> findAttacksOnSquare(int squareID, Collection<Move> attackerMoves) {
-        Collection<Move> ans = new ArrayList<>();
-        for (Move move : attackerMoves) {
-            if (move.getDestination() == squareID) {
-                ans.add(move);
-            }
-        }
-        return ans;
-    }
-
     public boolean checkLegalMove(final Move move) {
         return this.playersMoves.contains(move);
     }
 
-    public boolean isInCheck() {
-        return this.isInCheck;
-    }
 
-    public boolean isInCheckMate() {
-        return isInCheck() && !hasEscapeMoves();
-    }
-
-    public boolean hasEscapeMoves() {
-        for (final Move move : this.playersMoves) {
-            final MoveTransition transition = makeMove(move);
-            if (transition.getMoveStatus().isDone()) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public boolean isInStaleMate() {
-        return !this.isInCheck() && !this.hasEscapeMoves();
-    }
-
-    public boolean isCastled() {
-        return false;
-    }
-
-    public MoveTransition makeMove(final Move move) {
+    public PreMove makeMove(final Move move) {
         if(!checkLegalMove(move)) {
-            return new MoveTransition(this.board, move, MoveStatus.Illegal);
+            return new PreMove(this.board, move, MoveStatus.Illegal);
         }
 
         final Board transitionBoard = move.execute();
         if (Player.checkSquareAttacked(transitionBoard.getCurrentPlayer().getOpponent().getKing().getLocation(), transitionBoard.getCurrentPlayer().getLegalMoves())) {
-            return new MoveTransition(this.board, move, MoveStatus.InCheck);
+            return new PreMove(this.board, move, MoveStatus.InCheck);
         }
-        return new MoveTransition(transitionBoard, move, MoveStatus.Done);
+        return new PreMove(transitionBoard, move, MoveStatus.Done);
     }
     public abstract Collection<Piece> getActivePieces();
     public abstract Team getColor();

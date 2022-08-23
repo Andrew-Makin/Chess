@@ -1,14 +1,32 @@
 package Chess.Pieces;
 
-import java.util.Collection;
 import java.util.List;
 import Chess.Team;
 import Chess.board.Board;
 import Chess.board.BoardUtils;
 import Chess.board.Move;
-import Chess.board.Square;
 
 public abstract class Piece {
+    // I will provide some brief documentation for all the piece sub classes here in the parent class
+    //
+    // Pieces have two mysterious arrays of int at the top of the file, these represent the pieces movement
+    // vectors. for example the queen has the two arrays:
+    //     private final static int[] potentialMovesX = {1, 1, -1, -1, 1, -1, 0, 0};
+    //     private final static int[] potentialMovesY = {1, -1, 1, -1, 0, 0, 1, -1};
+    // if you take the first element of both arrays you get the change in y and the change in x of the first move
+    // of the queen. Each pairing of two elements in the arrays represents a potential move.
+    //
+    // I don't know if the hashCode() and equals() methods are up to date because I got pretty lazy doing all that
+    // boring hash code stuff.
+    //
+    // Pieces are immutable and are only created by the board, or by other pieces (when the pieces are moved)
+    //
+    // the update method only really does anything for the pawn class because it needs it for the en passant
+    // calculation other Pieces implement it just because I wanted it to be an abstract method.
+    //
+    // The x y coordinate system is only used by the pieces. All other parts of the chess engine just number
+    // the squares 0-63, this is becuase the xy system is more convienent for move calculation, while a single
+    // number is more convienent to store the squares in collections elsewhere.
 
     protected final int location;
     protected final int YCoord;
@@ -69,6 +87,8 @@ public abstract class Piece {
     public Team getColor() {
         return color;
     }
+
+    public abstract Piece update(Piece source);
 
     public abstract Piece movePiece(Move move);
 

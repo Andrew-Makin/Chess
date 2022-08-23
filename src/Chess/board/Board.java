@@ -8,6 +8,11 @@ import Chess.player.WhitePlayer;
 
 import java.util.*;
 
+// The board stores information about the state of the whole game, including all the squares with all the pieces on
+// them as well as the players, all the players valid moves, and the next player to move
+//
+// The board utilizes a builder class because having so many arguments would be very cumbersome.
+
 public class Board {
 
     private final List<Square> gameBoard;

@@ -25,6 +25,11 @@ public class Knight extends Piece{
     }
 
     @Override
+    public Piece update(Piece source) {
+        return new Knight(this.location, this.color, this.firstMove);
+    }
+
+    @Override
     public Piece movePiece(Move move) {
         return new Knight(move.getDestination(), this.getColor(), false);
     }

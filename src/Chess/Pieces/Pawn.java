@@ -23,6 +23,11 @@ public class Pawn extends Piece{
     }
 
     @Override
+    public Piece update(Piece source) {
+        return new Pawn(this.location, this.color, this.firstMove, false);
+    }
+
+    @Override
     public Piece movePiece(Move move) {
         if (move.getDestination()/ NUM_SQUARES_PER_ROW == 0 || move.getDestination()/NUM_SQUARES_PER_ROW == (NUM_SQUARES_PER_ROW - 1)) {
             // TODO: return promoted piece
@@ -35,25 +40,28 @@ public class Pawn extends Piece{
     public List<Move> getLegalMoves(Board board) {
         List<Move> legalMoves = new ArrayList<>();
 
-
         for (int i = 0; i < potentialMovesX.length; i++) {
             int potentialXCoord = super.XCoord + potentialMovesX[i] * this.color.getDirection();
             int potentialYCoord = super.YCoord + potentialMovesY[i] * this.color.getDirection();
             if (validCoordinates(potentialXCoord, potentialYCoord)) {
                 int potentialDest = potentialYCoord * NUM_SQUARES_PER_ROW + potentialXCoord;
                 Square potentialSquare = board.getSquare(potentialDest);
-                int enPassantVictimLocation = potentialDest + NUM_SQUARES_PER_ROW;
+                int enPassantVictimLocation = potentialDest + (NUM_SQUARES_PER_ROW * this.color.getDirection() * -1);
+
                 if (i==0 && !potentialSquare.squareOccupied()) { // standard move
                     legalMoves.add(new StandardMove(board, this, potentialDest));
+
                 } else if (i==1 && super.isFirstMove()
                         && !potentialSquare.squareOccupied()
                         && !board.getSquare(super.location + this.color.getDirection() * NUM_SQUARES_PER_ROW).squareOccupied()) { // first move jump
                     legalMoves.add(new Jump(board, this, potentialDest));
-                } else if (potentialSquare.squareOccupied()){ // diagonal attack
+
+                } else if ((i==2 || i == 3) && potentialSquare.squareOccupied()){ // diagonal attack
                     if (potentialSquare.getPiece().color != this.color) {
                         legalMoves.add(new Capture(board, this, potentialDest, potentialSquare.getPiece()));
                     }
-                } else if (enPassantVictimLocation < NUM_SQUARES && enPassantVictimLocation > 0){ // en passant square valid
+
+                } else if ((i==2 || i == 3) && enPassantVictimLocation < NUM_SQUARES && enPassantVictimLocation > 0){ // en passant square valid
                     Square victimSquare = board.getSquare(enPassantVictimLocation);
                     if (victimSquare.squareOccupied()) {
                         Piece victim = victimSquare.getPiece();
@@ -64,8 +72,6 @@ public class Pawn extends Piece{
                 }
             }
         }
-
-
         return legalMoves;
     }
 

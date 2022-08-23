@@ -22,6 +22,11 @@ public class Queen extends Piece{
     }
 
     @Override
+    public Piece update(Piece source) {
+        return new Queen(this.location, this.color, this.firstMove);
+    }
+
+    @Override
     public Piece movePiece(Move move) {
         return new Queen(move.getDestination(), this.getColor(), false);
     }

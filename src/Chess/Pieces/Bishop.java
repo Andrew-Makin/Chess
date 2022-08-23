@@ -20,6 +20,12 @@ public class Bishop extends Piece{
         super(location, color, firstMove, false, "bishop");
     }
 
+
+    @Override
+    public Piece update(Piece source) {
+        return new Bishop(this.location, this.color, this.firstMove);
+    }
+
     @Override
     public Piece movePiece(Move move) {
         return new Bishop(move.getDestination(), this.getColor(), false);

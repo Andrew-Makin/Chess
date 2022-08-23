@@ -5,6 +5,9 @@ import Chess.Pieces.Piece;
 import Chess.Team;
 import Chess.player.Player;
 
+// the move class is where all the magic happens,
+// specifically the execute() method will change
+// from one previous board to the next if possible
 public abstract class Move {
 
     final Board board;
@@ -50,15 +53,18 @@ public abstract class Move {
         return movedPiece;
     }
 
-    public abstract Board execute();
+    // these are overwritten by the subclasses
     public boolean isJump() {
         return false;
     }
+
     public boolean isCastle() {
         return false;
     }
 
     public boolean isCapture() {return false;}
+
+    public abstract Board execute();
 
     public static final class StandardMove extends Move {
 
@@ -81,7 +87,11 @@ public abstract class Move {
                 }
             }
             for(final Piece piece : current.getOpponent().getActivePieces()) {
-                builder.setPiece(piece);
+                if (piece.justJumped()) {
+                    builder.setPiece(piece.update(piece));
+                } else {
+                    builder.setPiece(piece);
+                }
             }
 
             builder.setPlayerToMove(current.getOpponent().getColor());
@@ -114,7 +124,11 @@ public abstract class Move {
             }
             for(final Piece piece : current.getOpponent().getActivePieces()) {
                 if (!piece.equals(victim)) {
-                    builder.setPiece(piece);
+                    if (piece.justJumped()) {
+                        builder.setPiece(piece.update(piece));
+                    } else {
+                        builder.setPiece(piece);
+                    }
                 }
             }
 
@@ -146,7 +160,11 @@ public abstract class Move {
                 }
             }
             for(final Piece piece : current.getOpponent().getActivePieces()) {
-                builder.setPiece(piece);
+                if (piece.justJumped()) {
+                    builder.setPiece(piece.update(piece));
+                } else {
+                    builder.setPiece(piece);
+                }
             }
 
             builder.setPlayerToMove(current.getOpponent().getColor());
@@ -196,7 +214,11 @@ public abstract class Move {
                 }
             }
             for(final Piece piece : current.getOpponent().getActivePieces()) {
-                builder.setPiece(piece);
+                if (piece.justJumped()) {
+                    builder.setPiece(piece.update(piece));
+                } else {
+                    builder.setPiece(piece);
+                }
             }
 
             builder.setPlayerToMove(current.getOpponent().getColor());

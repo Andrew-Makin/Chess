@@ -22,6 +22,11 @@ public class Rook extends Piece{
     }
 
     @Override
+    public Piece update(Piece source) {
+        return new Rook(this.location, this.color, this.firstMove);
+    }
+
+    @Override
     public Piece movePiece(Move move) {
         if (move.isCastle()) {
             if (location == 0) {

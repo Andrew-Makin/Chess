@@ -6,10 +6,7 @@ import Chess.board.*;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+import java.awt.event.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -40,6 +37,42 @@ public class Table {
     public Table() {
         this.legalHighlight = true;
         this.gameFrame = new JFrame("JChess");
+        this.gameFrame.addWindowListener(new WindowListener() {
+            @Override
+            public void windowOpened(WindowEvent e) {
+
+            }
+
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+
+            @Override
+            public void windowClosed(WindowEvent e) {
+                System.exit(0);
+            }
+
+            @Override
+            public void windowIconified(WindowEvent e) {
+
+            }
+
+            @Override
+            public void windowDeiconified(WindowEvent e) {
+
+            }
+
+            @Override
+            public void windowActivated(WindowEvent e) {
+
+            }
+
+            @Override
+            public void windowDeactivated(WindowEvent e) {
+
+            }
+        });
         this.gameFrame.setLayout(new BorderLayout());
         final JMenuBar tableMenuBar = createMenuBar();
         this.gameFrame.setJMenuBar(tableMenuBar);
@@ -154,9 +187,9 @@ public class Table {
                         } else {
                             destSquare = drawnBoard.getSquare(squareID);
                             final Move move = Move.MoveFactory.createMove(drawnBoard, sourceSquare.getSquareID(), destSquare.getSquareID());
-                            final MoveTransition transition = drawnBoard.getCurrentPlayer().makeMove(move);
+                            final PreMove transition = drawnBoard.getCurrentPlayer().makeMove(move);
                             if (transition.getMoveStatus().isDone()) {
-                                drawnBoard = transition.getTransitionBoard();
+                                drawnBoard = transition.getPreMoveBoard();
                             }
                             sourceSquare = null;
                             destSquare = null;
@@ -213,6 +246,9 @@ public class Table {
                     if(move.getDestination() == this.squareID) {
                         try{
                             if(move.isCapture()) {
+                                if (this.getComponentCount() >0){
+                                    this.remove(0);
+                                }
                                 add(new JLabel(new ImageIcon(ImageIO.read(new File("art/other/capture_dot.png")))));
                             } else {
                                 add(new JLabel(new ImageIcon(ImageIO.read(new File("art/other/regular_dot.png")))));
@@ -227,7 +263,11 @@ public class Table {
 
         private Collection<Move> pieceLegals(Board board) {
             if(candidatePiece!=null && candidatePiece.getColor() == board.getCurrentPlayer().getColor()) {
-                return candidatePiece.getLegalMoves(board);
+                Collection<Move> ans = candidatePiece.getLegalMoves(board);
+                if (candidatePiece.getType().equals("king")) {
+                    ans.addAll(board.getCurrentPlayer().calculateCastles());
+                }
+                return ans;
             }
             return Collections.emptyList();
         }
@@ -254,7 +294,7 @@ public class Table {
         }
 
         private void assignSquareColor() {
-            if ((squareID + squareID / 8) % 2 == 0) {
+            if ((squareID + squareID / BoardUtils.NUM_SQUARES_PER_ROW) % 2 == 0) {
                 setBackground(lightTileColor);
             } else {
                 setBackground(darkTileColor);

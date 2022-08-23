@@ -4,6 +4,11 @@ import Chess.Pieces.Piece;
 
 import java.util.*;
 
+// the square class is also immutable like pieces, boards, and moves
+// it only stores the number square that it is and if it is occupied, it also stores the piece on it
+
+// one optomization is that I pre-make all 64 empty squares and instead of constructing them each
+// time I need one, I just get that empty square from the collection
 public abstract class Square {
 
     protected final int squareID;

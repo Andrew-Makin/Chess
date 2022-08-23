@@ -16,10 +16,13 @@ public class King extends Piece{
     private final static int[] potentialMovesX = {1, 1, 1, 0, 0, -1, -1, -1};
     private final static int[] potentialMovesY = {1, 0, -1, 1, -1, 1, 0, -1};
 
-
-
     public King(final int location, final Team color, final boolean firstMove) {
         super(location, color, firstMove, false, "king");
+    }
+
+    @Override
+    public Piece update(Piece source) {
+        return new King(this.location, this.color, this.firstMove);
     }
 
     @Override
@@ -35,9 +38,6 @@ public class King extends Piece{
             int potentialYCoord = super.YCoord + potentialMovesY[i];
             if (validCoordinates(potentialXCoord, potentialYCoord)) {
                 int potentialDest = potentialYCoord * BoardUtils.NUM_SQUARES_PER_ROW + potentialXCoord;
-                // I don't know why this didn't work for the potential dest calculation:
-                // super.location + potentialMovesX[i] + BoardUtils.NUM_SQUARES_PER_ROW * potentialMovesY[i];
-                // maybe something to do with the edges of the board and wrapping around
                 Square potentialSquare = board.getSquare(potentialDest);
                 if (!potentialSquare.squareOccupied()) {//tile is unoccupied)
                     legalMoves.add(new Move.StandardMove(board, this, potentialDest));

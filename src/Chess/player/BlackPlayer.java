@@ -9,6 +9,7 @@ import Chess.board.Move;
 import java.util.ArrayList;
 import java.util.Collection;
 
+
 public class BlackPlayer extends Player{
     public BlackPlayer(Board board, Collection<Move> playersMoves, Collection<Move> opponentsMoves) {
         super(board, playersMoves, opponentsMoves);
@@ -29,7 +30,9 @@ public class BlackPlayer extends Player{
     @Override
     public Collection<Move> calculateCastles() {
         Collection<Move> ans = new ArrayList<>();
-        if (BoardUtils.NUM_SQUARES_PER_ROW < 8) {
+        // castles are only valid if the board size is 8, I don't want to deal with generalizing castles to other
+        // board sizes
+        if (BoardUtils.NUM_SQUARES_PER_ROW != 8) {
             return ans;
         }
 
