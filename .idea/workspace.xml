@@ -4,66 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="668097ba-5a0e-4cb1-a9ec-24e2604975d8" name="Changes" comment="first GUI">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_12_22,_9_44_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_12_22__9_44_AM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/fancy/BB.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/fancy/BK.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/fancy/BN.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/fancy/BP.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/fancy/BQ.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/fancy/BR.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/fancy/WB.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/fancy/WK.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/fancy/WN.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/fancy/WP.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/fancy/WQ.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/fancy/WR.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/fancy2/BB.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/fancy2/BK.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/fancy2/BN.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/fancy2/BP.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/fancy2/BQ.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/fancy2/BR.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/fancy2/WB.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/fancy2/WK.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/fancy2/WN.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/fancy2/WP.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/fancy2/WQ.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/fancy2/WR.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/holywarriors/BB.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/holywarriors/BK.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/holywarriors/BN.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/holywarriors/BP.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/holywarriors/BQ.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/holywarriors/BR.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/holywarriors/WB.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/holywarriors/WK.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/holywarriors/WN.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/holywarriors/WP.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/holywarriors/WQ.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/holywarriors/WR.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/misc/green_dot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/misc/illegal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/misc/red_dot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/simple/bishopBlack.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/simple/bishopWhite.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/simple/kingBlack.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/simple/kingWhite.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/simple/knightBlack.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/simple/knightWhite.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/simple/pawnBlack.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/simple/pawnWhite.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/simple/queenBlack.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/simple/queenWhite.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/simple/rookBlack.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/simple/rookWhite.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/GUI/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/GUI/Table.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/MyChess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/MyChess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/Pieces/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/Pieces/Pawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/board/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/board/Move.java" afterDir="false" />
-    </list>
+    <list default="true" id="668097ba-5a0e-4cb1-a9ec-24e2604975d8" name="Changes" comment="half fixed en passant" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -202,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660622996714</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="half fixed en passant">
+      <created>1661277620688</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1661277620688</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -221,6 +169,7 @@
     <MESSAGE value="First gui" />
     <MESSAGE value="Fixed castleing and played around a bit with main" />
     <MESSAGE value="first GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="first GUI" />
+    <MESSAGE value="half fixed en passant" />
+    <option name="LAST_COMMIT_MESSAGE" value="half fixed en passant" />
   </component>
 </project>
