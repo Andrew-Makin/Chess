@@ -15,7 +15,6 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-// table contains the entire GUI not much logic of its own though
 
 public class Table {
 

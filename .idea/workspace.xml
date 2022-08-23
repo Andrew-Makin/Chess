@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="668097ba-5a0e-4cb1-a9ec-24e2604975d8" name="Changes" comment="adding final comments">
-      <change afterPath="$PROJECT_DIR$/src/Chess/GUI/NewGameActionListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="668097ba-5a0e-4cb1-a9ec-24e2604975d8" name="Changes" comment="Fixed some behavior with the menus and closing windows">
       <change beforePath="$PROJECT_DIR$/src/Chess/GUI/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/GUI/Table.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661297494018</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Fixed some behavior with the menus and closing windows">
+      <created>1661299047350</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1661299047350</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,6 +202,7 @@
     <MESSAGE value="half fixed en passant" />
     <MESSAGE value="added files to git" />
     <MESSAGE value="adding final comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding final comments" />
+    <MESSAGE value="Fixed some behavior with the menus and closing windows" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed some behavior with the menus and closing windows" />
   </component>
 </project>
