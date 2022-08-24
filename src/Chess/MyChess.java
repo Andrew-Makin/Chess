@@ -1,7 +1,6 @@
 package Chess;
 
 import Chess.GUI.Table;
-import Chess.board.Board;
 
 public class MyChess {
 
